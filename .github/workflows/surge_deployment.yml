@@ -32,7 +32,3 @@ jobs:
       run: npm install --global surge
     - name: Deploy to Surge
       run: surge ./build myreactapp.surge.sh ${{ secrets.surge_token}}
-      
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
