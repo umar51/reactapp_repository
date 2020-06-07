@@ -1,11 +1,12 @@
-startimport React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div> Hello World</div>
+  <div><App name = "Umar" age = {25}/></div>,
+  //React.createElement("div", null, React.createElement("span", null, "Hello from create element inside create element")),
   document.getElementById('root')
 );
 
